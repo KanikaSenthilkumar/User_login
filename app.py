@@ -4,7 +4,7 @@ from flask_sqlalchemy import SQLAlchemy
 from werkzeug.security import generate_password_hash, check_password_hash
 
 app = Flask(__name__, static_folder='static')
-app.secret_key = "Kanika2629*"
+app.secret_key = "***********"
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:Kanika2926*@localhost/login'
 db = SQLAlchemy(app)
 
