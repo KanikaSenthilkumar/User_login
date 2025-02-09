@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>EXPENSE REMINDER</title>
+        <link rel="icon" href="C:\Users\kanik\Downloads\WhatsApp Image 2024-12-14 at 11.32.27 AM.jpeg">
+        <style>
+body {
+    font-family: 'Comic Sans MS';
+    background-color: whitesmoke;
+    color: #333333;
+    background: linear-gradient(to bottom, #E6E6FA, #ffffff);
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+}
+.title{
+    text-align : left;
+    margin:30px 30px
+}
+h1 {
+    color: #4d2c50;
+    text-align: center;
+    font-size: 40px;
+    margin: 20px;
+}
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    margin: 20px;
+}
+img {
+    width: 50%;
+    max-width: 400px;
+    display: block;
+    margin: 20px auto;
+ 
+}
+a {
+    font-size: 18px;
+    color: #82388f;
+    text-decoration: none;
+    margin: 10px 20px;
+}
+a:hover {
+    color: #82388f;
+    text-decoration: underline;
+}
+.center {
+    text-align: center;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+hr {
+    border: 1px solid #ccc;
+    width: 80%;
+    margin: 30px 30px;
+}
+button {
+    background-color: #82388f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+button:hover {
+    background-color:#82388f;
+}
+</style>
+</head>
+<BODY bgcolor=" whitesmoke"> 
+<h1 class='title'>💹ExpenseReminder</h1>
+<h1>Simplify Your Personal Finances💰</h1>
+<p>Take just a few seconds to log your daily transactions, set budgets for various categories, and track your spending effortlessly!
+</p>
+<img src="{{ url_for('static', filename='images/expense_dashboard.png') }}" alt="Expense Dashboard">
+<p>
+stay on Top of Your Finances<br>
+Regularly reviewing your expenses ensures you're aligned with your financial goals.<br>
+Save more, spend smarter, and make informed decisions.
+</p>
+<h1>Designed for simplicity,Built for Community</h1>
+<p>Expense Reminder is your ultimate companion for managing money.<br>
+   With a focus on privacy and user-friendly design, our app empowers you to take charge of your finances.<br>
+   Enjoy secure, intuitive tools for tracking expenses, setting budgets, and maintaining financial clarity.</p>
+<p>A leading privacy-first finance management app designed to empower users with secure, intuitive, 
+and comprehensive tools for tracking expenses and budgeting.<br></p>
+<center><P>Already have an account?
+<a href="{{ url_for('login') }}">Login</a>
+<br>Don't have an account?
+<a href="{{ url_for('signup') }}">Sign Up</a>
+</center>
+</BODY>
+</html>

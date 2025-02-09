@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="icon" href="C:\Users\kanik\Downloads\WhatsApp Image 2024-12-14 at 11.32.27 AM.jpeg">
+    <style>
+        body {
+            font-family: 'Comic Sans MS';
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+            text-align: center;
+            background: linear-gradient;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        h1 {
+            color: #444;
+            margin-top: 20px;
+        }
+        
+        form {
+            display: inline-block;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #5cb85c;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        
+        button:hover {
+            background-color: #4cae4c;
+        }
+        
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+        
+        ul li {
+            margin: 10px auto;
+            padding: 10px;
+            border-radius: 4px;
+            width: 50%;
+            color: #fff;
+        }
+        
+        ul li.success {
+            background-color: #5cb85c;
+        }
+        
+        ul li.danger {
+            background-color: #d9534f;
+        }
+        
+        ul li.warning {
+            background-color: #f0ad4e;
+        }
+        
+        ul li.info {
+            background-color: #5bc0de;
+        }
+        
+        a {
+            text-decoration: none;
+            color: #82388f;
+            font-size: 18px;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        </style>
+</head>
+<body>
+    <h1>Welcome, {{ username }}!</h1>
+    <p>You have successfully logged in.</p>
+    <p> Wanna <a href="/logout">Logout</a> ?
+</p>
+</body>
+</html>
